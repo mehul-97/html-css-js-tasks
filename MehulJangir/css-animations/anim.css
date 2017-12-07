@@ -1,0 +1,71 @@
+.image {
+	margin: 10px;
+	position: relative;
+	height:30%;
+	width:30%;
+}
+
+.image:hover {
+	border: 5px dashed black;
+	background-color: blue;
+	border-radius: 30px;
+}
+
+@keyframes colorChange {
+  0% {
+    color: black;
+    background: white;
+  } 20% {
+  	color: white;
+  	background: black;
+  } 40% {
+  	color: yellow;
+  	background:blue;
+  } 60% {
+  	color: green;
+  	background: black;
+  } 80% {
+  	color: pink;
+  	background: orange;
+  } 100% {
+  	color: blue;
+  	background: red;
+  }
+}
+
+@keyframes backChange {
+	0% {
+    background: white;
+  } 10% {
+  	background: pink;
+  } 20% {
+  	background: red;
+  } 30% {
+  	background: orange;
+  } 40% {
+  	background: black;
+  } 50% {
+  	background: blue;
+  } 60% {
+    background: green;
+  } 70% {
+  	background: steelblue;
+  } 80% {
+  	background: yellow;
+  } 90% {
+  	background: grey;
+  } 95% {
+  	background: orange;
+  } 100% {
+  	background: white;
+  }
+}
+}
+
+body {
+    position: relative;
+    animation-name: backChange;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
